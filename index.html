@@ -5,19 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="color-1.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1">
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2">
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3">
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4">
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5">
+    <link rel="stylesheet" href="css/style-switcher.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Document</title>
 </head>
 
 <body>
     <!-- main container start -->
-    <div class="container">
+    <div class="main-container">
         <!-- Aside start -->
         <div class="aside">
             <div class="logo">
-                <a href="#"><span>Atlas</span></a>
+                <a href="#"><span>A</span>tlas</a>
             </div>
             <div class="nav-toggle">
                 Toggle
@@ -55,7 +60,7 @@
 
             <!-- About Section Start -->
 
-            <section class="about section " id="about">
+            <section class="about section " id="about" style="margin-left: 25px;">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -523,13 +528,33 @@
 
     </div>
     <!-- Main content End -->
-
+    <!-- style switcher start -->
+    <div class="style-switcher">
+        <div class="style-switcher-toggler s-icon">
+            <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+            <i class="fas fa-moon"></i>
+        </div>
+        <h4>Theme Colors</h4>
+        <div class="colors">
+            <span class="color-2" onclick="setActiviveStyle('color-2')"></span>
+            <span class="color-1" onclick="setActiviveStyle('color-1')"></span>
+            <span class="color-3" onclick="setActiviveStyle('color-3')"></span>
+            <span class="color-4" onclick="setActiviveStyle('color-4')"></span>
+            <span class="color-5" onclick="setActiviveStyle('color-5')"></span>
+        </div>
+    </div>
+    <!-- style switcher end -->
     </div>
 
     <!-- main container end -->
 
     <!-- js file -->
-    <script src="index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        referrerpolicy="no-referrer"></script>
+    <script src="./js/script.js"></script>
+    <script src="./js/style-switcher.js"></script>
 </body>
 
 </html>
